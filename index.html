@@ -1183,15 +1183,12 @@
           <span class="flow-step">原：拍照 → 选中图片 → 上传</span>
           <span class="flow-arrow">→</span>
           <span class="flow-step">改1：拍照 → 选中图片 → 调起编辑器 → 涂鸦 → 上传</span>
-        </div>
-        <div class="flow-steps">
+          <span class="flow-arrow">→</span>
           <span class="flow-step">改2：拍照 → 调起编辑器 → 涂鸦 → 上传</span>
         </div>
+        <img src="images/1777429378500.png" alt="组件问题" class="screenshot" onclick="openLightbox(this)">
         <div class="highlight-box orange">
-          <p><strong>问题：</strong>uniapp上传组件不支持自动"选中图片"，即使用底层方案也无法解决</p>
-        </div>
-        <div class="card">
-          <img src="images/1777429378500.png" alt="组件问题" class="screenshot" onclick="openLightbox(this)">
+          <p><strong>问题：</strong>UniApp上传组件本身不支持自动"选中图片"，即使用底层方案也无法解决</p>
         </div>
       </div>
     </section>
@@ -1212,8 +1209,8 @@
               <li>不确定前端技术栈能否解决此问题</li>
             </ul>
           </div>
-          <div>
-            <div class="card">
+          <div >
+            <div class="card" style="margin-top: 3rem;">
               <h3>尝试过程</h3>
               <p>使用Minimax-2.7、Hy3-preview都没有解决</p>
               <p style="margin-top: 0.8rem;">最后尝试<strong>GLM-5V-Turbo</strong>模型</p>
@@ -1233,7 +1230,7 @@
           <div>
             <h3>遇到的问题</h3>
             <p>调用摄像头时控制台一直报错，有兼容性问题</p>
-            <img src="images/1777429560247.png" alt="兼容性问题" class="screenshot" onclick="openLightbox(this)">
+            <img style="margin-top: 1.6rem;"src="images/1777429560247.png" alt="兼容性问题" class="screenshot" onclick="openLightbox(this)">
           </div>
           <div>
             <h3>最终解决方案</h3>
@@ -1267,6 +1264,7 @@
         <div class="two-col" style="margin-top: 1.5rem;">
           <div class="card">
             <h3>编辑面板</h3>
+            <p style="margin-bottom: 0.5rem;">可编辑、新增Markdown文件</p>
             <img src="images/1777189480221.jpeg" alt="编辑面板" class="screenshot" onclick="openLightbox(this)">
           </div>
           <div class="card">
@@ -1327,16 +1325,15 @@
       </div>
     </section>
 
-    <!-- Slide 17: MCP Server - Integration -->
-    <section class="slide" data-slide="17" data-title="MCP Server - 集成到智能体应用">
+    <!-- Slide 17: MCP Server - Integration Config -->
+    <section class="slide" data-slide="17" data-title="MCP Server - 配置">
       <div class="grid-bg"></div>
       <div class="slide-content">
-        <h2>集成到智能体应用</h2>
-        <p>因为fetch-article是一个通用的MCP Server，所以可以集成到任何智能体应用中</p>
-        <div class="three-col" style="margin-top: 1.5rem;">
+        <h2>MCP Server配置</h2>
+        <p>fetch-article是一个通用的MCP Server，可以集成到任何智能体应用中</p>
+        <div class="two-col" style="margin-top: 1.5rem;">
           <div class="card">
-            <h3>集成到Claude Code</h3>
-            <p>.claude/settings.json文件配置：</p>
+            <h3>.claude/settings.json</h3>
             <div class="code-block">
               <pre><code class="language-json">{
   "allowedMcpServers": [{
@@ -1344,7 +1341,9 @@
   }]
 }</code></pre>
             </div>
-              <p>.claude.json文件配置：</p>
+          </div>
+          <div class="card">
+            <h3>.claude.json</h3>
             <div class="code-block">
               <pre><code class="language-json">{
   "mcpServers": {
@@ -1357,6 +1356,16 @@
 }</code></pre>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 18: MCP Server - Integration -->
+    <section class="slide" data-slide="18" data-title="MCP Server - 集成到智能体应用">
+      <div class="grid-bg"></div>
+      <div class="slide-content">
+        <h2>集成到智能体应用</h2>
+        <div class="three-col" style="margin-top: 1.5rem;">
           <div class="card">
             <h3>集成到Claude Code</h3>
             <img src="images/1776913068463.png" alt="Claude Code集成" class="screenshot" onclick="openLightbox(this)">
@@ -1373,12 +1382,12 @@
       </div>
     </section>
 
-    <!-- Slide 18: Skills -->
-    <section class="slide" data-slide="18" data-title="积累的Skills">
+    <!-- Slide 19: Skills -->
+    <section class="slide" data-slide="19" data-title="积累的Skills">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>积累的Skills</h2>
-        <div class="two-col">
+        <div class="two-col" style="margin-top: -1rem;">
           <div class="card">
             <h3>html-ppt</h3>
             <p>根据md文件生成网页版PPT，效果如图：</p>
@@ -1390,18 +1399,18 @@
             <img src="images/1777273489137.png" alt="git提交规范" class="screenshot screenshot-small" onclick="openLightbox(this)">
           </div>
         </div>
-        <div class="card" style="margin-top: 1.5rem;">
+        <div class="card" style="margin-top: 0.5rem;">
           <h3>fetch-article</h3>
           <p>给同名的MCP Server做规格约束</p>
           <div class="two-col" style="margin-top: 1rem;">
             <div>
               <h3>使用skill前</h3>
-              <p>对一个url执行两次MCP Server，得到的格式不一样</p>
+              <p>格式不统一</p>
               <img src="images/1776908372527.png" alt="使用前" class="screenshot" onclick="openLightbox(this)">
             </div>
             <div>
               <h3>使用skill后</h3>
-              <p>统一输出格式</p>
+              <p>格式统一</p>
               <img src="images/1776913068463.png" alt="使用后" class="screenshot" onclick="openLightbox(this)">
             </div>
           </div>
@@ -1410,7 +1419,7 @@
     </section>
 
     <!-- Slide 19: Efficiency -->
-    <section class="slide" data-slide="19" data-title="工作效率提升情况">
+    <section class="slide" data-slide="20" data-title="工作效率提升情况">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>工作效率提升情况</h2>
@@ -1432,7 +1441,7 @@
     </section>
 
     <!-- Slide 20: Team Promotion -->
-    <section class="slide" data-slide="20" data-title="团队应用推广情况">
+    <section class="slide" data-slide="21" data-title="团队应用推广情况">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>团队应用推广情况</h2>
@@ -1440,11 +1449,13 @@
           <div>
             <div class="card">
               <h3>技术分享</h3>
-              <p>已做关于MCP Server的技术分享：MCP Server + Skill + Hook + Auto Memory</p>
+              <p>已做关于MCP Server的技术分享：《如何设计并落地一个通用的MCP Server》</p>
+              <p>分享MCP Server + Skill + Hook + Auto Memory的使用场景</p>
             </div>
             <div class="card">
               <h3>Vibe Coding仓库</h3>
               <p>gitlab新建Vibe Coding仓库：沉淀日常工作中的Skills和MCP Server</p>
+              <p>共享团队内部经验</p>
             </div>
           </div>
           <div class="card">
@@ -1464,7 +1475,7 @@
     </section>
 
     <!-- Slide 21: Evolution -->
-    <section class="slide" data-slide="21" data-title="AI Coding开发模式演进">
+    <section class="slide" data-slide="22" data-title="AI Coding开发模式演进">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>AI Coding开发模式演进</h2>
@@ -1486,13 +1497,10 @@
     </section>
 
     <!-- Slide 22: Summary -->
-    <section class="slide" data-slide="22" data-title="总结">
+    <section class="slide" data-slide="23" data-title="总结">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>总结</h2>
-        <div class="highlight-box green">
-          <p><strong>核心观点：</strong>善于运用多个智能体应用来解决问题</p>
-        </div>
         <div class="overview-grid" style="margin-top: 2rem;">
           <div class="overview-card">
             <h3>实战经验</h3>
@@ -1507,11 +1515,14 @@
             <p>结合工作经验，不完全依赖AI</p>
           </div>
         </div>
+        <div class="highlight-box green" style="margin-top: 3rem;">
+          <p><strong>核心观点：</strong>善于运用多个智能体应用来解决问题</p>
+        </div>
       </div>
     </section>
 
     <!-- Slide 23: Q&A -->
-    <section class="slide slide-cover" data-slide="23" data-title="Q & A">
+    <section class="slide slide-cover" data-slide="24" data-title="Q & A">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h1>Q & A</h1>
@@ -1538,7 +1549,7 @@
   </div>
 
   <!-- Page Number -->
-  <div class="page-number" id="pageNumber">1 / 23</div>
+  <div class="page-number" id="pageNumber">1 / 24</div>
 
   <!-- Lightbox -->
   <div class="lightbox" id="lightbox" onclick="closeLightbox()">
@@ -1587,22 +1598,23 @@
         { index: 13, title: '桌面应用' },
         { index: 14, title: 'MCP Server背景' },
         { index: 15, title: '功能描述' },
-        { index: 16, title: '集成到智能体' },
-        { index: 17, title: '积累的Skills' }
+        { index: 16, title: 'MCP Server配置' },
+        { index: 17, title: '集成到智能体' },
+        { index: 18, title: '积累的Skills' }
       ]},
       { title: '效率与推广', icon: '📈', items: [
-        { index: 18, title: '工作效率提升' },
-        { index: 19, title: '团队推广' },
-        { index: 20, title: '模式演进' }
+        { index: 19, title: '工作效率提升' },
+        { index: 20, title: '团队推广' },
+        { index: 21, title: '模式演进' }
       ]},
       { title: '总结', icon: '📊', items: [
-        { index: 21, title: '总结' },
-        { index: 22, title: 'Q & A' }
+        { index: 22, title: '总结' },
+        { index: 23, title: 'Q & A' }
       ]}
     ];
 
     let currentSlide = 1;
-    const totalSlides = 23;
+    const totalSlides = 24;
     let currentPhotoIndex = 0;
     let photoWallImages = [];
 
