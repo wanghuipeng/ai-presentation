@@ -1323,7 +1323,6 @@
         <div class="card" style="margin-top: 1.5rem;">
           <h3>实现架构</h3>
           <img src="images/image2026-4-23_18-55-19.png" alt="实现架构1" class="screenshot" onclick="openLightbox(this)">
-          <img src="images/image2026-4-22_18-24-37.png" alt="实现架构2" class="screenshot" onclick="openLightbox(this)">
         </div>
       </div>
     </section>
@@ -1337,16 +1336,16 @@
         <div class="three-col" style="margin-top: 1.5rem;">
           <div class="card">
             <h3>集成到Claude Code</h3>
+            <p>.claude/settings.json文件配置：</p>
             <div class="code-block">
-              <p>.claude/settings.json文件配置：</p>
               <pre><code class="language-json">{
   "allowedMcpServers": [{
     "serverName": "fetch-article"
   }]
 }</code></pre>
             </div>
-            <div class="code-block">
               <p>.claude.json文件配置：</p>
+            <div class="code-block">
               <pre><code class="language-json">{
   "mcpServers": {
     "fetch-article": {
@@ -1357,7 +1356,10 @@
   }
 }</code></pre>
             </div>
-            <img src="images/1776913068463.png" alt="Claude Code集成" class="screenshot screenshot-small" onclick="openLightbox(this)" style="margin-top: 0.8rem;">
+          </div>
+          <div class="card">
+            <h3>集成到Claude Code</h3>
+            <img src="images/1776913068463.png" alt="Claude Code集成" class="screenshot" onclick="openLightbox(this)">
           </div>
           <div class="card">
             <h3>集成到Workbuddy</h3>
@@ -1379,7 +1381,7 @@
         <div class="two-col">
           <div class="card">
             <h3>html-ppt</h3>
-            <p>根据md文件生成网页版PPT（吸收了一些豆包、ui-ux-pro-max的特色）</p>
+            <p>根据md文件生成网页版PPT，效果如图：</p>
             <img src="images/ScreenShot_2026-05-06_113010_720.png" alt="git提交规范" class="screenshot screenshot-small" onclick="openLightbox(this)">
           </div>
           <div class="card">
@@ -1399,6 +1401,7 @@
             </div>
             <div>
               <h3>使用skill后</h3>
+              <p>统一输出格式</p>
               <img src="images/1776913068463.png" alt="使用后" class="screenshot" onclick="openLightbox(this)">
             </div>
           </div>
