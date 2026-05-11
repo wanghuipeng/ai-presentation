@@ -1081,8 +1081,8 @@
           <p>使用Workbuddy的专家模式，召唤一个"前端专家"</p>
         </div>
         <div class="screenshot-container">
-          <img src="images/1776234753789.png" alt="召唤专家2" class="screenshot" onclick="openLightbox(this)">
           <img src="images/1776234786300.png" alt="召唤专家3" class="screenshot" onclick="openLightbox(this)">
+          <img src="images/1776234753789.png" alt="召唤专家2" class="screenshot" onclick="openLightbox(this)">
         </div>
         <div class="highlight-box">
           <p>提示词中包含想实现的功能的截图和自己的需求描述</p>
@@ -1163,7 +1163,7 @@
       <div class="slide-content">
         <h2>案例一经验总结</h2>
         <div class="highlight-box green">
-          <p>要及时清理上下文，因为在处理一个复杂的任务时，可能在对话的过程中产生一些错误的方案，一旦上下文过长，除了本身会产生幻觉，这些错误的方案也会污染上下文。</p>
+          <p>要及时清理上下文，因为在处理一个复杂的任务时，可能在对话的过程中产生一些错误的方案，一旦上下文过长，除了本身会产生幻觉，这些错误的方案也会污染上下文，从而导致AI失忆。</p>
         </div>
       </div>
     </section>
@@ -1200,19 +1200,20 @@
         <div class="two-col">
           <div>
             <p>需要推翻原来的上传组件，基于原生App自研一套拍照组件（参考微信、小红书的拍照组件）</p>
-            <h3>工期不允许立刻自研的原因：</h3>
+            <h3>不具备立刻自研的条件（需要踩坑）：</h3>
             <ul>
               <li>不具备成熟的原生App开发能力</li>
               <li>兼容性问题无法评估</li>
               <li>不了解uniapp对原生组件、原生API的支持程度</li>
-              <li>不确定前端技术栈能否解决此问题</li>
+              <li>不确定当前项目的技术栈能否解决此问题</li>
             </ul>
           </div>
           <div >
             <div class="card" style="margin-top: 3rem;">
-              <h3>尝试过程</h3>
-              <p>使用Minimax-2.7、Hy3-preview都没有解决</p>
-              <p style="margin-top: 0.8rem;">最后尝试<strong>GLM-5V-Turbo</strong>模型</p>
+              <h3>尝试切换不同模型来解决</h3>
+              <p style="margin-top: 0.8rem;">❌ Minimax-2.7</p>
+              <p style="margin-top: 0.8rem;">❌ Hy3-preview</p>
+              <p style="margin-top: 0.8rem;">✅ GLM-5V-Turbo</p>
             </div>
           </div>
         </div>
@@ -1224,7 +1225,7 @@
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>实现过程</h2>
-        <p>查看官方文档，可以使用live-pusher组件进行<strong>实时音视频录制</strong></p>
+        <p>人工+AI：查看官方文档，了解到可以使用live-pusher组件进行<strong>实时音视频录制（直播推流）</strong></p>
         <div class="two-col">
           <div>
             <h3>遇到的问题</h3>
@@ -1294,6 +1295,13 @@
               <li>希望使用JavaScript来开发MCP Server</li>
               <li>MCP Server可能包含更多的层级目录和文件</li>
             </ul>
+            <h3>技术栈</h3>
+            <ul>
+              <li>nodejs+playwright</li>
+              <li>Mcp Server</li>
+              <li>Skill</li>
+              <li>Auto Memory + Hook</li>
+            </ul>
           </div>
           <div>
             <div class="card">
@@ -1317,9 +1325,23 @@
         <div class="highlight-box">
           <p><strong>功能描述：</strong>在智能体应用中只需输入url，即可解析url中所有内容，并按照skill中设定的规格进行内容的格式化输出，方便快速学习各个技术平台的博客内容。</p>
         </div>
-        <div class="card" style="margin-top: 1.5rem;">
-          <h3>实现架构</h3>
+        <div class="card" style="margin-top: 0.5rem;">
+          <h3>工作流</h3>
           <img src="images/image2026-4-23_18-55-19.png" alt="实现架构1" class="screenshot" onclick="openLightbox(this)">
+        </div>
+        <div class="three-col" >
+          <div class="card">
+            <h3>稀土掘金</h3>
+            <img src="images/juejin.png"  class="screenshot" onclick="openLightbox(this)">
+          </div>
+          <div class="card">
+            <h3>CSDN</h3>
+            <img src="images/csdn.png"  class="screenshot" onclick="openLightbox(this)">
+          </div>
+          <div class="card">
+            <h3>语雀</h3>
+            <img src="images/yuque.png"  class="screenshot" onclick="openLightbox(this)">
+          </div>
         </div>
       </div>
     </section>
@@ -1405,13 +1427,11 @@
           <p>给同名的MCP Server做规格约束</p>
           <div class="two-col" style="margin-top: 1rem;">
             <div>
-              <h3>使用skill前</h3>
-              <p>格式不统一</p>
+              <h3>使用skill前（格式不统一）</h3>
               <img src="images/1776908372527.png" alt="使用前" class="screenshot" onclick="openLightbox(this)">
             </div>
             <div>
-              <h3>使用skill后</h3>
-              <p>格式统一</p>
+              <h3>使用skill后（格式统一）</h3>
               <img src="images/1776913068463.png" alt="使用后" class="screenshot" onclick="openLightbox(this)">
             </div>
           </div>
@@ -1435,7 +1455,7 @@
           </div>
           <div class="card">
             <h3>更换模型</h3>
-            <p>如果问题解决不了，可以尝试更换模型，更换模型推倒重来可能需要付出额外时间</p>
+            <p>如果问题解决不了，可以尝试更换模型，但更换模型推倒重来可能需要付出额外时间</p>
           </div>
         </div>
       </div>
@@ -1449,14 +1469,14 @@
         <div class="two-col">
           <div>
             <div class="card">
-              <h3>技术分享</h3>
-              <p>已做关于MCP Server的技术分享：《如何设计并落地一个通用的MCP Server》</p>
-              <p>分享MCP Server + Skill + Hook + Auto Memory的使用场景</p>
+              <h3>知识分享</h3>
+              <p style="margin-bottom: 0.5rem;">分享主题：《如何设计并落地一个通用的MCP Server》</p>
+              <p style="margin-bottom: 0.5rem;">技术要点：MCP Server + Skill + Hook + Auto Memory + Playwright</p>
             </div>
             <div class="card">
-              <h3>Vibe Coding仓库</h3>
-              <p>gitlab新建Vibe Coding仓库：沉淀日常工作中的Skills和MCP Server</p>
-              <p>共享团队内部经验</p>
+              <h3>团队共享</h3>
+              <p style="margin-bottom: 0.5rem;">创建仓库：https://git.i-sanger.com/fe/vibe-coding</p>
+              <p style="margin-bottom: 0.5rem;">经验沉淀：日常工作中积累的Skills和MCP Server</p>
             </div>
           </div>
           <div class="card">
@@ -1479,19 +1499,18 @@
     <section class="slide" data-slide="22" data-title="AI Coding开发模式演进">
       <div class="grid-bg"></div>
       <div class="slide-content">
-        <h2>AI Coding开发模式演进</h2>
+        <h2>26年AI Coding开发模式演进</h2>
         <div class="timeline">
           <div class="timeline-item">
-            <h3>2024年5月 - 2026年2月</h3>
-            <p>AI Coding插件（Comate、Copilot）——> AI IDE的尝试（Trae、Codebuddy）</p>
-          </div>
-          <div class="timeline-item">
             <h3>2026年2月 - 2026年3月</h3>
-            <p>Claude Code（安装各种skill、各种MCP Server进行提效）</p>
+            <p>Claude Code：安装好用的Skills、MCP Server来提效</p>
           </div>
           <div class="timeline-item">
             <h3>2026年4月至今</h3>
-            <p>Claude Code + Workbuddy（自带成熟skill、兼容Claude Code的Skills、MCP Server、专家模式）+ Codebuddy + Copilot + 自研Skill + 自研MCP Server</p>
+            <p>多智能体应用混用：自研一些Skills、MCP Server来提效</p>
+            <p>主：Claude Code</p>
+            <p>副1：Workbuddy：专家模式</p>
+            <p>副2：Codebuddy：多模型</p>
           </div>
         </div>
       </div>
@@ -1513,11 +1532,8 @@
           </div>
           <div class="overview-card">
             <h3>持续演进</h3>
-            <p>结合工作经验，不完全依赖AI</p>
+            <p>结合工作经验，多智能体应用、多模型协同</p>
           </div>
-        </div>
-        <div class="highlight-box green" style="margin-top: 3rem;">
-          <p><strong>核心观点：</strong>善于运用多个智能体应用来解决问题</p>
         </div>
       </div>
     </section>
@@ -1526,9 +1542,8 @@
     <section class="slide slide-cover" data-slide="24" data-title="Q & A">
       <div class="grid-bg"></div>
       <div class="slide-content">
-        <h1>Q & A</h1>
-        <p class="subtitle">感谢聆听</p>
-        <div class="tech-badge">THANKS</div>
+        <h1>感谢聆听</h1>
+        <div class="tech-badge" style="margin-top: 30px;">THANKS</div>
       </div>
     </section>
 
