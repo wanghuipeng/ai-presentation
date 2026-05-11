@@ -1053,11 +1053,9 @@
               <li>支持单元格设置背景色</li>
               <li>支持分页功能</li>
             </ul>
-            <div class="highlight-box orange">
-              <p><strong>核心问题：</strong>不想改动源码，该功能已上线且写在公共组件里，不宜改动底层</p>
-            </div>
+           
             <h3>探索目标</h3>
-            <p>在不改动源码的前提下进行功能增强</p>
+            <p>不想改动源码，该功能已上线且写在公共组件里，不宜改动底层</p>
           </div>
           <div>
             <div class="card">
@@ -1085,7 +1083,7 @@
           <img src="images/1776234753789.png" alt="召唤专家2" class="screenshot" onclick="openLightbox(this)">
         </div>
         <div class="highlight-box">
-          <p>提示词中包含想实现的功能的截图和自己的需求描述</p>
+          <p>提示词中包含想要实现的功能的截图和需求描述</p>
         </div>
       </div>
     </section>
@@ -1131,13 +1129,24 @@
       </div>
     </section>
 
-    <!-- Slide 8: Case 1 - Problems -->
-    <section class="slide" data-slide="8" data-title="案例一：遇到的问题">
+    <!-- Slide 8: Case 1 - Implementation -->
+    <section class="slide" data-slide="8" data-title="案例一：实现过程">
+      <div class="grid-bg"></div>
+      <div class="slide-content">
+        <h2>实现过程</h2>
+        <div class="card">
+          <img src="images/ScreenShot_2026-05-11_130500_969.png" alt="完成功能" class="screenshot" onclick="openLightbox(this)">
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 9: Case 1 - Problems -->
+    <section class="slide" data-slide="9" data-title="案例一：遇到的问题">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>多轮对话中的问题</h2>
         <div class="two-col">
-          <div>
+          <div style="margin-top: 1.5rem;">
             <div class="highlight-box orange">
               <p><strong>幻觉问题：</strong>AI多次表示"找到问题了"，但实际并没有解决问题</p>
             </div>
@@ -1157,8 +1166,8 @@
       </div>
     </section>
 
-    <!-- Slide 9: Case 1 - Summary -->
-    <section class="slide" data-slide="9" data-title="案例一：经验总结">
+    <!-- Slide 10: Case 1 - Summary -->
+    <section class="slide" data-slide="10" data-title="案例一：经验总结">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>案例一经验总结</h2>
@@ -1169,7 +1178,7 @@
     </section>
 
     <!-- Slide 10: Case 2 - Requirements -->
-    <section class="slide" data-slide="10" data-title="案例二：UniApp组件自研 - 需求描述">
+    <section class="slide" data-slide="11" data-title="案例二：UniApp组件自研 - 需求描述">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <div class="section-header">
@@ -1193,14 +1202,14 @@
     </section>
 
     <!-- Slide 11: Case 2 - Challenges -->
-    <section class="slide" data-slide="11" data-title="案例二：自研难点">
+    <section class="slide" data-slide="12" data-title="案例二：自研难点">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>自研组件的挑战</h2>
         <div class="two-col">
           <div>
             <p>需要推翻原来的上传组件，基于原生App自研一套拍照组件（参考微信、小红书的拍照组件）</p>
-            <h3>不具备立刻自研的条件（需要踩坑）：</h3>
+            <h3 style="margin-top: 3rem;">不具备立刻自研的条件（需要踩坑）：</h3>
             <ul>
               <li>不具备成熟的原生App开发能力</li>
               <li>兼容性问题无法评估</li>
@@ -1211,9 +1220,10 @@
           <div >
             <div class="card" style="margin-top: 3rem;">
               <h3>尝试切换不同模型来解决</h3>
-              <p style="margin-top: 0.8rem;">❌ Minimax-2.7</p>
+              <!-- <p style="margin-top: 0.8rem;">❌ Minimax-2.7</p>
               <p style="margin-top: 0.8rem;">❌ Hy3-preview</p>
-              <p style="margin-top: 0.8rem;">✅ GLM-5V-Turbo</p>
+              <p style="margin-top: 0.8rem;">✅ GLM-5V-Turbo</p> -->
+              <img src="images/ai-model-strategy.png" alt="组件问题" class="screenshot" onclick="openLightbox(this)">
             </div>
           </div>
         </div>
@@ -1221,7 +1231,7 @@
     </section>
 
     <!-- Slide 12: Case 2 - Solution -->
-    <section class="slide" data-slide="12" data-title="案例二：实现方案">
+    <section class="slide" data-slide="13" data-title="案例二：实现方案">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>实现过程</h2>
@@ -1242,7 +1252,7 @@
     </section>
 
     <!-- Slide 13: Case 2 - Summary -->
-    <section class="slide" data-slide="13" data-title="案例二：经验总结">
+    <section class="slide" data-slide="14" data-title="案例二：经验总结">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>案例二经验总结</h2>
@@ -1253,7 +1263,7 @@
     </section>
 
     <!-- Slide 14: Vibe Coding - Desktop App -->
-    <section class="slide" data-slide="14" data-title="Vibe Coding - 桌面应用">
+    <section class="slide" data-slide="15" data-title="Vibe Coding - 桌面应用">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <div class="section-header">
@@ -1277,7 +1287,7 @@
     </section>
 
     <!-- Slide 15: MCP Server - Background -->
-    <section class="slide" data-slide="15" data-title="MCP Server - 背景">
+    <section class="slide" data-slide="16" data-title="MCP Server - 背景">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>自研通用的MCP Server</h2>
@@ -1297,8 +1307,8 @@
             </ul>
             <h3>技术栈</h3>
             <ul>
-              <li>nodejs+playwright</li>
-              <li>Mcp Server</li>
+              <li>nodejs + playwright</li>
+              <li>MCP Server</li>
               <li>Skill</li>
               <li>Auto Memory + Hook</li>
             </ul>
@@ -1318,12 +1328,12 @@
     </section>
 
     <!-- Slide 16: MCP Server - Function -->
-    <section class="slide" data-slide="16" data-title="MCP Server - 功能描述">
+    <section class="slide" data-slide="17" data-title="MCP Server - 功能描述">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>fetch-article MCP Server</h2>
         <div class="highlight-box">
-          <p><strong>功能描述：</strong>在智能体应用中只需输入url，即可解析url中所有内容，并按照skill中设定的规格进行内容的格式化输出，方便快速学习各个技术平台的博客内容。</p>
+          <p><strong>功能描述：</strong>在智能体应用中只需输入url，即可自动解析内容，并按照skill中的规格进行内容的格式化输出，方便快速学习各个技术平台的博客内容。</p>
         </div>
         <div class="card" style="margin-top: 0.5rem;">
           <h3>工作流</h3>
@@ -1347,11 +1357,10 @@
     </section>
 
     <!-- Slide 17: MCP Server - Integration Config -->
-    <section class="slide" data-slide="17" data-title="MCP Server - 配置">
+    <section class="slide" data-slide="18" data-title="MCP Server - 配置">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>MCP Server配置</h2>
-        <p>fetch-article是一个通用的MCP Server，可以集成到任何智能体应用中</p>
         <div class="two-col" style="margin-top: 1.5rem;">
           <div class="card">
             <h3>.claude/settings.json</h3>
@@ -1382,11 +1391,16 @@
     </section>
 
     <!-- Slide 18: MCP Server - Integration -->
-    <section class="slide" data-slide="18" data-title="MCP Server - 集成到智能体应用">
+    <section class="slide" data-slide="19" data-title="MCP Server - 集成到智能体应用">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>集成到智能体应用</h2>
-        <div class="three-col" style="margin-top: 1.5rem;">
+        <p>fetch-article是一个通用的MCP Server，可以集成到任何智能体应用中</p>
+        <div class="card">
+          <h3>通用MCP Server</h3>
+          <img src="images/image2026-4-24_11-35-52.png" alt="Claude Code集成"  onclick="openLightbox(this)">
+        </div>
+        <div class="three-col">
           <div class="card">
             <h3>集成到Claude Code</h3>
             <img src="images/1776913068463.png" alt="Claude Code集成" class="screenshot" onclick="openLightbox(this)">
@@ -1404,7 +1418,7 @@
     </section>
 
     <!-- Slide 19: Skills -->
-    <section class="slide" data-slide="19" data-title="积累的Skills">
+    <section class="slide" data-slide="20" data-title="积累的Skills">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>积累的Skills</h2>
@@ -1427,12 +1441,12 @@
           <p>给同名的MCP Server做规格约束</p>
           <div class="two-col" style="margin-top: 1rem;">
             <div>
-              <h3>使用skill前（格式不统一）</h3>
-              <img src="images/1776908372527.png" alt="使用前" class="screenshot" onclick="openLightbox(this)">
+              <h5>使用skill前（格式不统一）</h5>
+              <img style="margin-top: 0.7rem;" src="images/1776908372527.png" alt="使用前" class="screenshot" onclick="openLightbox(this)">
             </div>
             <div>
-              <h3>使用skill后（格式统一）</h3>
-              <img src="images/1776913068463.png" alt="使用后" class="screenshot" onclick="openLightbox(this)">
+              <h5>使用skill后（格式统一）</h5>
+              <img style="margin-top: 0.7rem;" src="images/1776913068463.png" alt="使用后" class="screenshot" onclick="openLightbox(this)">
             </div>
           </div>
         </div>
@@ -1440,21 +1454,22 @@
     </section>
 
     <!-- Slide 19: Efficiency -->
-    <section class="slide" data-slide="20" data-title="工作效率提升情况">
+    <section class="slide" data-slide="21" data-title="工作效率提升情况">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>工作效率提升情况</h2>
         <div class="three-col">
           <div class="card">
-            <h3>git-commit-convention</h3>
-            <p>commit的时候生成符合自己团队规范的文案</p>
+            <h3>Skills、MCP Server</h3>
+            <p>git-commit-convention：统一commit规范</p>
+            <p>fetch-article：蒸馏技术博客，提升技术储备效率</p>
           </div>
           <div class="card">
-            <h3>多智能体应用</h3>
+            <h3>多智能体应用协作</h3>
             <p>在解决难点时，善用多个智能体应用进行AI Coding，效率会有很大提升</p>
           </div>
           <div class="card">
-            <h3>更换模型</h3>
+            <h3>切换模型成本</h3>
             <p>如果问题解决不了，可以尝试更换模型，但更换模型推倒重来可能需要付出额外时间</p>
           </div>
         </div>
@@ -1462,7 +1477,7 @@
     </section>
 
     <!-- Slide 20: Team Promotion -->
-    <section class="slide" data-slide="21" data-title="团队应用推广情况">
+    <section class="slide" data-slide="22" data-title="团队应用推广情况">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>团队应用推广情况</h2>
@@ -1496,7 +1511,7 @@
     </section>
 
     <!-- Slide 21: Evolution -->
-    <section class="slide" data-slide="22" data-title="AI Coding开发模式演进">
+    <section class="slide" data-slide="23" data-title="AI Coding开发模式演进">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>26年AI Coding开发模式演进</h2>
@@ -1517,7 +1532,7 @@
     </section>
 
     <!-- Slide 22: Summary -->
-    <section class="slide" data-slide="23" data-title="总结">
+    <section class="slide" data-slide="24" data-title="总结">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>总结</h2>
@@ -1539,7 +1554,7 @@
     </section>
 
     <!-- Slide 23: Q&A -->
-    <section class="slide slide-cover" data-slide="24" data-title="Q & A">
+    <section class="slide slide-cover" data-slide="25" data-title="Q & A">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h1>感谢聆听</h1>
@@ -1601,36 +1616,37 @@
         { index: 4, title: 'Review方案' },
         { index: 5, title: '交付Claude Code' },
         { index: 6, title: '完成功能' },
-        { index: 7, title: '遇到的问题' },
-        { index: 8, title: '经验总结' }
+        { index: 7, title: '实现过程' },
+        { index: 8, title: '遇到的问题' },
+        { index: 9, title: '经验总结' }
       ]},
       { title: '案例二：UniApp组件', icon: '🛠️', items: [
-        { index: 9, title: '需求描述' },
-        { index: 10, title: '自研难点' },
-        { index: 11, title: '实现方案' },
-        { index: 12, title: '经验总结' }
+        { index: 10, title: '需求描述' },
+        { index: 11, title: '自研难点' },
+        { index: 12, title: '实现方案' },
+        { index: 13, title: '经验总结' }
       ]},
       { title: 'Vibe Coding', icon: '🚀', items: [
-        { index: 13, title: '桌面应用' },
-        { index: 14, title: 'MCP Server背景' },
-        { index: 15, title: '功能描述' },
-        { index: 16, title: 'MCP Server配置' },
-        { index: 17, title: '集成到智能体' },
-        { index: 18, title: '积累的Skills' }
+        { index: 14, title: '桌面应用' },
+        { index: 15, title: 'MCP Server背景' },
+        { index: 16, title: '功能描述' },
+        { index: 17, title: 'MCP Server配置' },
+        { index: 18, title: '集成到智能体' },
+        { index: 19, title: '积累的Skills' }
       ]},
       { title: '效率与推广', icon: '📈', items: [
-        { index: 19, title: '工作效率提升' },
-        { index: 20, title: '团队推广' },
-        { index: 21, title: '模式演进' }
+        { index: 20, title: '工作效率提升' },
+        { index: 21, title: '团队推广' },
+        { index: 22, title: '模式演进' }
       ]},
       { title: '总结', icon: '📊', items: [
-        { index: 22, title: '总结' },
-        { index: 23, title: 'Q & A' }
+        { index: 23, title: '总结' },
+        { index: 24, title: 'Q & A' }
       ]}
     ];
 
     let currentSlide = 1;
-    const totalSlides = 24;
+    const totalSlides = 25;
     let currentPhotoIndex = 0;
     let photoWallImages = [];
 
