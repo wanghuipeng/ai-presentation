@@ -1,0 +1,224 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "title-text",
+      "type": "text",
+      "x": 280,
+      "y": 40,
+      "width": 400,
+      "height": 40,
+      "fontFamily": 5,
+      "fontSize": 24,
+      "text": "AI Coding 多模型尝试"
+    },
+    {
+      "id": "brain-ellipse",
+      "type": "ellipse",
+      "x": 360,
+      "y": 250,
+      "width": 160,
+      "height": 140,
+      "fillStyle": "solid",
+      "backgroundColor": "#fff3bf",
+      "strokeColor": "#f97316",
+      "strokeWidth": 3
+    },
+    {
+      "id": "brain-text",
+      "type": "text",
+      "x": 360,
+      "y": 300,
+      "width": 160,
+      "height": 40,
+      "fontFamily": 5,
+      "fontSize": 18,
+      "text": "人脑",
+      "textAlign": "center"
+    },
+    {
+      "id": "glm-box",
+      "type": "rectangle",
+      "x": 600,
+      "y": 150,
+      "width": 180,
+      "height": 70,
+      "fillStyle": "solid",
+      "backgroundColor": "#b2f2bb",
+      "strokeColor": "#10B981",
+      "strokeWidth": 2
+    },
+    {
+      "id": "glm-name",
+      "type": "text",
+      "x": 600,
+      "y": 160,
+      "width": 180,
+      "height": 30,
+      "fontFamily": 5,
+      "fontSize": 16,
+      "text": "GLM-5V-Turbo",
+      "textAlign": "center"
+    },
+    {
+      "id": "glm-result",
+      "type": "text",
+      "x": 600,
+      "y": 188,
+      "width": 180,
+      "height": 25,
+      "fontFamily": 5,
+      "fontSize": 14,
+      "text": "成功解决",
+      "textAlign": "center"
+    },
+    {
+      "id": "minimax-box",
+      "type": "rectangle",
+      "x": 600,
+      "y": 400,
+      "width": 180,
+      "height": 70,
+      "fillStyle": "solid",
+      "backgroundColor": "#ffc9c9",
+      "strokeColor": "#F43F5E",
+      "strokeWidth": 2
+    },
+    {
+      "id": "minimax-name",
+      "type": "text",
+      "x": 600,
+      "y": 410,
+      "width": 180,
+      "height": 30,
+      "fontFamily": 5,
+      "fontSize": 16,
+      "text": "Minimax-2.7",
+      "textAlign": "center"
+    },
+    {
+      "id": "minimax-result",
+      "type": "text",
+      "x": 600,
+      "y": 438,
+      "width": 180,
+      "height": 25,
+      "fontFamily": 5,
+      "fontSize": 14,
+      "text": "无法解决",
+      "textAlign": "center"
+    },
+    {
+      "id": "hy3-box",
+      "type": "rectangle",
+      "x": 80,
+      "y": 265,
+      "width": 180,
+      "height": 70,
+      "fillStyle": "solid",
+      "backgroundColor": "#ffc9c9",
+      "strokeColor": "#F43F5E",
+      "strokeWidth": 2
+    },
+    {
+      "id": "hy3-name",
+      "type": "text",
+      "x": 80,
+      "y": 275,
+      "width": 180,
+      "height": 30,
+      "fontFamily": 5,
+      "fontSize": 16,
+      "text": "Hy3-preview",
+      "textAlign": "center"
+    },
+    {
+      "id": "hy3-result",
+      "type": "text",
+      "x": 80,
+      "y": 303,
+      "width": 180,
+      "height": 25,
+      "fontFamily": 5,
+      "fontSize": 14,
+      "text": "无法解决",
+      "textAlign": "center"
+    },
+    {
+      "id": "arrow-glm",
+      "type": "arrow",
+      "x": 520,
+      "y": 200,
+      "width": 80,
+      "height": 50,
+      "fillStyle": "solid",
+      "backgroundColor": "transparent",
+      "strokeColor": "#10B981",
+      "strokeWidth": 2,
+      "points": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 80,
+          "y": 50
+        }
+      ],
+      "lastCommittedPoint": null
+    },
+    {
+      "id": "arrow-minimax",
+      "type": "arrow",
+      "x": 520,
+      "y": 340,
+      "width": 80,
+      "height": 60,
+      "fillStyle": "solid",
+      "backgroundColor": "transparent",
+      "strokeColor": "#F43F5E",
+      "strokeWidth": 2,
+      "points": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 80,
+          "y": 60
+        }
+      ],
+      "lastCommittedPoint": null
+    },
+    {
+      "id": "arrow-hy3",
+      "type": "arrow",
+      "x": 260,
+      "y": 300,
+      "width": 100,
+      "height": 0,
+      "fillStyle": "solid",
+      "backgroundColor": "transparent",
+      "strokeColor": "#F43F5E",
+      "strokeWidth": 2,
+      "points": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": -100,
+          "y": 0
+        }
+      ],
+      "lastCommittedPoint": null
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "gridSize": 20
+  },
+  "files": {}
+}
