@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -117,7 +118,7 @@
       justify-content: center;
     }
 
-    .slide-cover .slide-content > * {
+    .slide-cover .slide-content>* {
       text-align: center;
     }
 
@@ -178,7 +179,8 @@
       margin-bottom: 1rem;
     }
 
-    ul, ol {
+    ul,
+    ol {
       padding-left: 1.5rem;
       margin: 0.8rem 0;
     }
@@ -359,8 +361,15 @@
     }
 
     @keyframes toc-blink {
-      0%, 100% { box-shadow: 0 0 8px rgba(0, 229, 255, 0.2); }
-      50% { box-shadow: 0 0 20px rgba(0, 229, 255, 0.4); }
+
+      0%,
+      100% {
+        box-shadow: 0 0 8px rgba(0, 229, 255, 0.2);
+      }
+
+      50% {
+        box-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
+      }
     }
 
     .toc-toggle svg {
@@ -772,23 +781,37 @@
 
     /* Animations */
     @keyframes titleSlide {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     /* 切换时内容立即显示，避免闪烁 */
-    .slide .slide-content > * {
+    .slide .slide-content>* {
       opacity: 1;
       transform: translateY(0);
     }
 
     /* 标题单独动画 - 更明显的入场效果 */
-    .slide.active .slide-content > h2 {
+    .slide.active .slide-content>h2 {
       animation: titleSlide 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
 
@@ -798,27 +821,43 @@
     }
 
     /* 内容区域延迟入场，形成视觉隔离 */
-    .slide.active .slide-content > *:not(h2):not(h1) {
+    .slide.active .slide-content>*:not(h2):not(h1) {
       opacity: 0;
       animation: fadeInUp 0.5s ease forwards;
       animation-delay: 0.3s;
     }
 
-    .slide.active .slide-content > *:nth-child(2) { animation-delay: 0.35s; }
-    .slide.active .slide-content > *:nth-child(3) { animation-delay: 0.45s; }
-    .slide.active .slide-content > *:nth-child(4) { animation-delay: 0.55s; }
-    .slide.active .slide-content > *:nth-child(5) { animation-delay: 0.65s; }
-    .slide.active .slide-content > *:nth-child(n+6) { animation-delay: 0.7s; }
+    .slide.active .slide-content>*:nth-child(2) {
+      animation-delay: 0.35s;
+    }
+
+    .slide.active .slide-content>*:nth-child(3) {
+      animation-delay: 0.45s;
+    }
+
+    .slide.active .slide-content>*:nth-child(4) {
+      animation-delay: 0.55s;
+    }
+
+    .slide.active .slide-content>*:nth-child(5) {
+      animation-delay: 0.65s;
+    }
+
+    .slide.active .slide-content>*:nth-child(n+6) {
+      animation-delay: 0.7s;
+    }
 
     /* 封面页不需要延迟 */
-    .slide.active.slide-cover .slide-content > * {
+    .slide.active.slide-cover .slide-content>* {
       animation-delay: 0s !important;
       opacity: 1 !important;
     }
 
     /* Responsive */
     @media (max-width: 768px) {
-      .two-col, .three-col {
+
+      .two-col,
+      .three-col {
         grid-template-columns: 1fr;
       }
 
@@ -978,11 +1017,12 @@
     }
   </style>
 </head>
+
 <body>
   <!-- TOC Toggle -->
   <button class="toc-toggle" onclick="toggleTOC()" title="目录 (T)">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M4 6h16M4 12h16M4 18h16"/>
+      <path d="M4 6h16M4 12h16M4 18h16" />
     </svg>
   </button>
 
@@ -995,7 +1035,7 @@
       <span class="toc-title">目录导航</span>
       <button class="toc-close" onclick="toggleTOC()">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M18 6L6 18M6 6l12 12"/>
+          <path d="M18 6L6 18M6 6l12 12" />
         </svg>
       </button>
     </div>
@@ -1053,7 +1093,7 @@
               <li>支持单元格设置背景色</li>
               <li>支持分页功能</li>
             </ul>
-           
+
             <h3>探索目标</h3>
             <p>不想改动源码，该功能已上线且写在公共组件里，不宜改动底层</p>
           </div>
@@ -1135,7 +1175,8 @@
       <div class="slide-content">
         <h2>实现过程</h2>
         <div class="card">
-          <img src="images/ScreenShot_2026-05-11_130500_969.png" alt="完成功能" class="screenshot" onclick="openLightbox(this)">
+          <img src="images/ScreenShot_2026-05-11_130500_969.png" alt="完成功能" class="screenshot"
+            onclick="openLightbox(this)">
         </div>
       </div>
     </section>
@@ -1159,8 +1200,10 @@
           </div>
           <div>
             <img src="images/1776240699561.png" alt="问题1" class="screenshot" onclick="openLightbox(this)">
-            <img src="images/1776241565232.png" alt="问题2" class="screenshot" onclick="openLightbox(this)" style="margin-top: 0.8rem;">
-            <img src="images/1776241706872.png" alt="问题2" class="screenshot" onclick="openLightbox(this)" style="margin-top: 0.8rem;">
+            <img src="images/1776241565232.png" alt="问题2" class="screenshot" onclick="openLightbox(this)"
+              style="margin-top: 0.8rem;">
+            <img src="images/1776241706872.png" alt="问题2" class="screenshot" onclick="openLightbox(this)"
+              style="margin-top: 0.8rem;">
           </div>
         </div>
       </div>
@@ -1172,7 +1215,7 @@
       <div class="slide-content">
         <h2>案例一经验总结</h2>
         <div class="highlight-box green">
-          <ul>
+          <ul style="width: 400px;">
             <li>要及时清理上下文：防止产生幻觉、失忆</li>
             <li>多智能体应用协作：各取所长</li>
           </ul>
@@ -1220,7 +1263,7 @@
               <li>不确定当前项目的技术栈能否解决此问题</li>
             </ul>
           </div>
-          <div >
+          <div>
             <div class="card" style="margin-top: 3rem;">
               <h3>尝试切换不同模型来解决</h3>
               <!-- <p style="margin-top: 0.8rem;">❌ Minimax-2.7</p>
@@ -1243,7 +1286,8 @@
           <div>
             <h3>遇到的问题</h3>
             <p>调用摄像头时控制台一直报错，有兼容性问题</p>
-            <img style="margin-top: 1.6rem;"src="images/1777429560247.png" alt="兼容性问题" class="screenshot" onclick="openLightbox(this)">
+            <img style="margin-top: 1.6rem;" src="images/1777429560247.png" alt="兼容性问题" class="screenshot"
+              onclick="openLightbox(this)">
           </div>
           <div>
             <h3>最终解决方案</h3>
@@ -1260,7 +1304,7 @@
       <div class="slide-content">
         <h2>案例二经验总结</h2>
         <div class="highlight-box green">
-          <ul>
+          <ul style="width: 400px;">
             <li>AI Coding + 自身经验</li>
             <li>引导AI做正确的事情</li>
             <li>不完全依赖同一种模型</li>
@@ -1269,14 +1313,30 @@
       </div>
     </section>
 
-    <!-- Slide 14: Vibe Coding - Desktop App -->
-    <section class="slide" data-slide="15" data-title="Vibe Coding - 桌面应用">
+    <!-- Slide 14: Vibe Coding - Desktop App (copy) -->
+    <section class="slide" data-slide="15" data-title="Vibe Coding">
       <div class="grid-bg"></div>
       <div class="slide-content">
-        <div class="section-header">
-          <div class="section-icon">🚀</div>
-          <h2>Vibe Coding - 桌面应用</h2>
+        <h2>Vibe Coding</h2>
+        <div class="overview-grid">
+          <div class="overview-card">
+            <h3 style="margin-top: 0.8rem;">1 个 桌面应用</h3>
+          </div>
+          <div class="overview-card">
+            <h3 style="margin-top: 0.8rem;">1 个 MCP Server</h3>
+          </div>
+          <div class="overview-card">
+            <h3 style="margin-top: 0.8rem;">3 个 skill</h3>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Slide 14: Vibe Coding - Desktop App -->
+    <section class="slide" data-slide="16" data-title="桌面应用">
+      <div class="grid-bg"></div>
+      <div class="slide-content">
+        <h2>桌面应用：LiteMD</h2>
         <p>因为没有找到一款轻量的新建、编辑、预览Markdown文件的桌面应用，所以Vibe Coding了一个，方便开发skill，实时看效果。</p>
         <div class="two-col" style="margin-top: 1.5rem;">
           <div class="card">
@@ -1294,7 +1354,7 @@
     </section>
 
     <!-- Slide 15: MCP Server - Background -->
-    <section class="slide" data-slide="16" data-title="MCP Server - 背景">
+    <section class="slide" data-slide="17" data-title="MCP Server - 背景">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>自研通用的MCP Server</h2>
@@ -1335,7 +1395,7 @@
     </section>
 
     <!-- Slide 16: MCP Server - Function -->
-    <section class="slide" data-slide="17" data-title="MCP Server - 功能描述">
+    <section class="slide" data-slide="18" data-title="MCP Server - 功能描述">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>fetch-article MCP Server</h2>
@@ -1346,25 +1406,25 @@
           <h3>工作流</h3>
           <img src="images/image2026-4-23_18-55-19.png" alt="实现架构1" class="screenshot" onclick="openLightbox(this)">
         </div>
-        <div class="three-col" >
+        <div class="three-col">
           <div class="card">
             <h3>稀土掘金</h3>
-            <img src="images/juejin.png"  class="screenshot" onclick="openLightbox(this)">
+            <img src="images/juejin.png" class="screenshot" onclick="openLightbox(this)">
           </div>
           <div class="card">
             <h3>CSDN</h3>
-            <img src="images/csdn.png"  class="screenshot" onclick="openLightbox(this)">
+            <img src="images/csdn.png" class="screenshot" onclick="openLightbox(this)">
           </div>
           <div class="card">
             <h3>语雀</h3>
-            <img src="images/yuque.png"  class="screenshot" onclick="openLightbox(this)">
+            <img src="images/yuque.png" class="screenshot" onclick="openLightbox(this)">
           </div>
         </div>
       </div>
     </section>
 
     <!-- Slide 17: MCP Server - Integration Config -->
-    <section class="slide" data-slide="18" data-title="MCP Server - 配置">
+    <section class="slide" data-slide="19" data-title="MCP Server - 配置">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>MCP Server配置</h2>
@@ -1398,14 +1458,15 @@
     </section>
 
     <!-- Slide 18: MCP Server - Integration -->
-    <section class="slide" data-slide="19" data-title="MCP Server - 集成到智能体应用">
+    <section class="slide" data-slide="20" data-title="MCP Server - 集成到智能体">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>集成到智能体应用</h2>
         <p>fetch-article是一个通用的MCP Server，可以集成到任何智能体应用中</p>
         <div class="card">
           <h3>通用MCP Server</h3>
-          <img style="padding: 1rem;" src="images/image2026-4-24_11-35-52.png" alt="Claude Code集成" class="screenshot" onclick="openLightbox(this)">
+          <img style="padding: 1rem;" src="images/image2026-4-24_11-35-52.png" alt="Claude Code集成" class="screenshot"
+            onclick="openLightbox(this)">
         </div>
         <div class="three-col">
           <div class="card">
@@ -1425,7 +1486,7 @@
     </section>
 
     <!-- Slide 19: Skills -->
-    <section class="slide" data-slide="20" data-title="积累的Skills">
+    <section class="slide" data-slide="21" data-title="积累的Skills">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>积累的Skills</h2>
@@ -1434,13 +1495,15 @@
             <h3>html-ppt</h3>
             <p>根据md文件生成网页版PPT，效果如图：</p>
             <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-            <img src="images/ScreenShot_2026-05-09_183617_516.png" alt="git提交规范" class="screenshot screenshot-small" onclick="openLightbox(this)">
+              <img src="images/ScreenShot_2026-05-09_183617_516.png" alt="git提交规范" class="screenshot screenshot-small"
+                onclick="openLightbox(this)">
             </div>
           </div>
           <div class="card">
             <h3>git-commit-convention</h3>
             <p>git提交规范，效果如图：</p>
-            <img src="images/1777273489137.png" alt="git提交规范" class="screenshot screenshot-small" onclick="openLightbox(this)">
+            <img src="images/1777273489137.png" alt="git提交规范" class="screenshot screenshot-small"
+              onclick="openLightbox(this)">
           </div>
         </div>
         <div class="card" style="margin-top: 0.5rem;">
@@ -1449,11 +1512,13 @@
           <div class="two-col" style="margin-top: 1rem;">
             <div>
               <h5>使用skill前（格式不统一）</h5>
-              <img style="margin-top: 0.7rem;" src="images/1776908372527.png" alt="使用前" class="screenshot" onclick="openLightbox(this)">
+              <img style="margin-top: 0.7rem;" src="images/1776908372527.png" alt="使用前" class="screenshot"
+                onclick="openLightbox(this)">
             </div>
             <div>
               <h5>使用skill后（格式统一）</h5>
-              <img style="margin-top: 0.7rem;" src="images/1776913068463.png" alt="使用后" class="screenshot" onclick="openLightbox(this)">
+              <img style="margin-top: 0.7rem;" src="images/1776913068463.png" alt="使用后" class="screenshot"
+                onclick="openLightbox(this)">
             </div>
           </div>
         </div>
@@ -1461,7 +1526,7 @@
     </section>
 
     <!-- Slide 19: Efficiency -->
-    <section class="slide" data-slide="21" data-title="工作效率提升情况">
+    <section class="slide" data-slide="22" data-title="工作效率提升情况">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>工作效率提升情况</h2>
@@ -1484,7 +1549,7 @@
     </section>
 
     <!-- Slide 20: Team Promotion -->
-    <section class="slide" data-slide="22" data-title="团队应用推广情况">
+    <section class="slide" data-slide="23" data-title="团队应用推广情况">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>团队应用推广情况</h2>
@@ -1502,7 +1567,7 @@
             </div>
           </div>
           <div class="card">
-            <h3>仓库结构</h3>
+            <h3>仓库目录</h3>
             <div class="code-block">
               <pre><code class="language-bash">vibe-coding/
 ├── skills/                    # Claude Code Skills 集合
@@ -1518,7 +1583,7 @@
     </section>
 
     <!-- Slide 21: Evolution -->
-    <section class="slide" data-slide="23" data-title="AI Coding开发模式演进">
+    <section class="slide" data-slide="24" data-title="AI Coding开发模式演进">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>26年AI Coding开发模式演进</h2>
@@ -1529,9 +1594,9 @@
           </div>
           <div class="timeline-item">
             <h3>2026年4月至今</h3>
-            <p>多智能体应用混用：自研一些Skills、MCP Server来提效</p>
+            <p>多智能体应用混用：自研Skills、MCP Server来提效</p>
             <p>主：Claude Code</p>
-            <p>副1：Workbuddy：专家模式</p>
+            <p>副1：Workbuddy：专家</p>
             <p>副2：Codebuddy：多模型</p>
           </div>
         </div>
@@ -1539,7 +1604,7 @@
     </section>
 
     <!-- Slide 22: Summary -->
-    <section class="slide" data-slide="24" data-title="总结">
+    <section class="slide" data-slide="25" data-title="总结">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>总结</h2>
@@ -1561,7 +1626,7 @@
     </section>
 
     <!-- Slide 23: Q&A -->
-    <section class="slide slide-cover" data-slide="25" data-title="Q & A">
+    <section class="slide slide-cover" data-slide="26" data-title="Q & A">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h1>感谢聆听</h1>
@@ -1575,13 +1640,13 @@
   <div class="nav-area">
     <button class="nav-btn" onclick="prevSlide()" title="上一页 (←)">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M15 18l-6-6 6-6"/>
+        <path d="M15 18l-6-6 6-6" />
       </svg>
     </button>
     <div class="page-indicator" id="pageIndicator"></div>
     <button class="nav-btn" onclick="nextSlide()" title="下一页 (→)">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M9 18l6-6-6-6"/>
+        <path d="M9 18l6-6-6-6" />
       </svg>
     </button>
   </div>
@@ -1593,7 +1658,7 @@
   <div class="lightbox" id="lightbox" onclick="closeLightbox()">
     <button class="lightbox-close">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M18 6L6 18M6 6l12 12"/>
+        <path d="M18 6L6 18M6 6l12 12" />
       </svg>
     </button>
     <img src="" alt="Lightbox" id="lightboxImg">
@@ -1605,7 +1670,7 @@
       <span class="photo-wall-title">图片浏览 (↑↓ 切换)</span>
       <button class="photo-wall-close" onclick="closePhotoWall()">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M18 6L6 18M6 6l12 12"/>
+          <path d="M18 6L6 18M6 6l12 12" />
         </svg>
       </button>
     </div>
@@ -1617,43 +1682,54 @@
     const tocData = [
       { title: '封面', icon: '📌', items: [{ index: 0, title: '封面' }] },
       { title: '内容概览', icon: '📋', items: [{ index: 1, title: '内容概览' }] },
-      { title: '案例一：富文本编辑器', icon: '💡', items: [
-        { index: 2, title: '需求描述' },
-        { index: 3, title: '召唤专家' },
-        { index: 4, title: 'Review方案' },
-        { index: 5, title: '交付Claude Code' },
-        { index: 6, title: '完成功能' },
-        { index: 7, title: '实现过程' },
-        { index: 8, title: '遇到的问题' },
-        { index: 9, title: '经验总结' }
-      ]},
-      { title: '案例二：UniApp组件', icon: '🛠️', items: [
-        { index: 10, title: '需求描述' },
-        { index: 11, title: '自研难点' },
-        { index: 12, title: '实现方案' },
-        { index: 13, title: '经验总结' }
-      ]},
-      { title: 'Vibe Coding', icon: '🚀', items: [
-        { index: 14, title: '桌面应用' },
-        { index: 15, title: 'MCP Server背景' },
-        { index: 16, title: '功能描述' },
-        { index: 17, title: 'MCP Server配置' },
-        { index: 18, title: '集成到智能体' },
-        { index: 19, title: '积累的Skills' }
-      ]},
-      { title: '效率与推广', icon: '📈', items: [
-        { index: 20, title: '工作效率提升' },
-        { index: 21, title: '团队推广' },
-        { index: 22, title: '模式演进' }
-      ]},
-      { title: '总结', icon: '📊', items: [
-        { index: 23, title: '总结' },
-        { index: 24, title: 'Q & A' }
-      ]}
+      {
+        title: '案例一：富文本编辑器', icon: '💡', items: [
+          { index: 2, title: '需求描述' },
+          { index: 3, title: '召唤专家' },
+          { index: 4, title: 'Review方案' },
+          { index: 5, title: '交付Claude Code' },
+          { index: 6, title: '完成功能' },
+          { index: 7, title: '实现过程' },
+          { index: 8, title: '遇到的问题' },
+          { index: 9, title: '经验总结' }
+        ]
+      },
+      {
+        title: '案例二：UniApp组件', icon: '🛠️', items: [
+          { index: 10, title: '需求描述' },
+          { index: 11, title: '自研难点' },
+          { index: 12, title: '实现方案' },
+          { index: 13, title: '经验总结' }
+        ]
+      },
+      {
+        title: 'Vibe Coding', icon: '🚀', items: [
+          { index: 14, title: 'Vibe Coding' },
+          { index: 15, title: '桌面应用：LiteMD' },
+          { index: 16, title: '自研通用的MCP Server' },
+          { index: 17, title: 'fetch-article MCP Server' },
+          { index: 18, title: 'MCP Server配置' },
+          { index: 19, title: '集成到智能体' },
+          { index: 20, title: '积累的Skills' }
+        ]
+      },
+      {
+        title: '效率与推广', icon: '📈', items: [
+          { index: 21, title: '工作效率提升' },
+          { index: 22, title: '团队推广' },
+          { index: 23, title: '模式演进' }
+        ]
+      },
+      {
+        title: '总结', icon: '📊', items: [
+          { index: 24, title: '总结' },
+          { index: 25, title: 'Q & A' }
+        ]
+      }
     ];
 
     let currentSlide = 1;
-    const totalSlides = 25;
+    const totalSlides = 26;
     let currentPhotoIndex = 0;
     let photoWallImages = [];
 
@@ -1872,4 +1948,5 @@
     init();
   </script>
 </body>
+
 </html>
