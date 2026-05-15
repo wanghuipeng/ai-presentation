@@ -1215,7 +1215,7 @@
       <div class="slide-content">
         <h2>案例一经验总结</h2>
         <div class="highlight-box green">
-          <ul style="width: 400px;">
+          <ul style="width: 450px;">
             <li>要及时清理上下文：防止产生幻觉、失忆</li>
             <li>多智能体应用协作：各取所长</li>
           </ul>
@@ -1251,28 +1251,15 @@
     <section class="slide" data-slide="12" data-title="案例二：自研难点">
       <div class="grid-bg"></div>
       <div class="slide-content">
-        <h2>自研组件的挑战</h2>
-        <div class="two-col">
-          <div>
-            <p>需要推翻原来的上传组件，基于原生App自研一套拍照组件（参考微信、小红书的拍照组件）</p>
-            <h3 style="margin-top: 3rem;">不具备立刻自研的条件（需要踩坑）：</h3>
-            <ul>
-              <li>不具备成熟的原生App开发能力</li>
-              <li>兼容性问题无法评估</li>
-              <li>不了解uniapp对原生组件、原生API的支持程度</li>
-              <li>不确定当前项目的技术栈能否解决此问题</li>
-            </ul>
-          </div>
-          <div>
-            <div class="card" style="margin-top: 3rem;">
-              <h3>尝试切换不同模型来解决</h3>
-              <!-- <p style="margin-top: 0.8rem;">❌ Minimax-2.7</p>
-              <p style="margin-top: 0.8rem;">❌ Hy3-preview</p>
-              <p style="margin-top: 0.8rem;">✅ GLM-5V-Turbo</p> -->
-              <img src="images/ai-model-strategy.png" alt="组件问题" class="screenshot" onclick="openLightbox(this)">
-            </div>
-          </div>
-        </div>
+        <h2>重构拍照组件的挑战</h2>
+        <p>需要推翻原来的上传组件，基于原生App自研一套拍照组件（参考微信、小红书的拍照组件）</p>
+        <h3 style="margin-top: 2rem;">不具备立刻自研的条件（需要踩坑）</h3>
+        <ul style="width: 450px;">
+          <li>不具备成熟的原生App开发能力</li>
+          <li>兼容性问题无法评估</li>
+          <li>不了解uniapp对原生组件、原生API的支持程度</li>
+          <li>不确定当前项目的技术栈能否解决此问题</li>
+        </ul>
       </div>
     </section>
 
@@ -1298,13 +1285,41 @@
       </div>
     </section>
 
-    <!-- Slide 13: Case 2 - Summary -->
-    <section class="slide" data-slide="14" data-title="案例二：经验总结">
+    <!-- Slide 13: Case 2 - Multi-Model -->
+    <section class="slide" data-slide="14" data-title="多模型切换">
+      <div class="grid-bg"></div>
+      <div class="slide-content">
+        <h2>多模型切换</h2>
+        <div class="two-col">
+          <div>
+            <p>当单一模型无法解决问题时，切换不同模型进行尝试</p>
+            <div class="card">
+              <h3>切换策略</h3>
+              <div class="flow-steps">
+                <span class="flow-step">问题分析</span>
+                <span class="flow-arrow">→</span>
+                <span class="flow-step">模型尝试</span>
+                <span class="flow-arrow">→</span>
+                <span class="flow-step">评估结果</span>
+                <span class="flow-arrow">→</span>
+                <span class="flow-step">继续/切换</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="images/ai-model-strategy.png" alt="AI模型策略" class="screenshot" onclick="openLightbox(this)">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 14: Case 2 - Summary -->
+    <section class="slide" data-slide="15" data-title="案例二：经验总结">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>案例二经验总结</h2>
         <div class="highlight-box green">
-          <ul style="width: 400px;">
+          <ul style="width: 450px;">
             <li>AI Coding + 自身经验</li>
             <li>引导AI做正确的事情</li>
             <li>不完全依赖同一种模型</li>
@@ -1313,8 +1328,8 @@
       </div>
     </section>
 
-    <!-- Slide 14: Vibe Coding - Desktop App (copy) -->
-    <section class="slide" data-slide="15" data-title="Vibe Coding">
+    <!-- Slide 15: Vibe Coding - Desktop App (copy) -->
+    <section class="slide" data-slide="16" data-title="Vibe Coding">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>Vibe Coding</h2>
@@ -1326,14 +1341,14 @@
             <h3 style="margin-top: 0.8rem;">1 个 MCP Server</h3>
           </div>
           <div class="overview-card">
-            <h3 style="margin-top: 0.8rem;">3 个 skill</h3>
+            <h3 style="margin-top: 0.8rem;">3 个 Skill</h3>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Slide 14: Vibe Coding - Desktop App -->
-    <section class="slide" data-slide="16" data-title="桌面应用">
+    <section class="slide" data-slide="17" data-title="桌面应用">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>桌面应用：LiteMD</h2>
@@ -1354,11 +1369,10 @@
     </section>
 
     <!-- Slide 15: MCP Server - Background -->
-    <section class="slide" data-slide="17" data-title="MCP Server - 背景">
+    <section class="slide" data-slide="18" data-title="MCP Server - 背景">
       <div class="grid-bg"></div>
       <div class="slide-content">
-        <h2>自研通用的MCP Server</h2>
-        <p>从0到1设计并落地一个通用的MCP Server：fetch-article</p>
+        <h2>MCP Server: fetch-article</h2>
         <div class="two-col">
           <div>
             <h3>背景</h3>
@@ -1374,10 +1388,10 @@
             </ul>
             <h3>技术栈</h3>
             <ul>
-              <li>nodejs + playwright</li>
-              <li>MCP Server</li>
+              <li>Nodejs + Playwright</li>
               <li>Skill</li>
               <li>Auto Memory + Hook</li>
+              <li>MCP Server</li>
             </ul>
           </div>
           <div>
@@ -1395,67 +1409,33 @@
     </section>
 
     <!-- Slide 16: MCP Server - Function -->
-    <section class="slide" data-slide="18" data-title="MCP Server - 功能描述">
+    <section class="slide" data-slide="19" data-title="MCP Server - 功能描述">
       <div class="grid-bg"></div>
       <div class="slide-content">
-        <h2>fetch-article MCP Server</h2>
-        <div class="highlight-box">
-          <p><strong>功能描述：</strong>在智能体应用中只需输入url，即可自动解析内容，并按照skill中的规格进行内容的格式化输出，方便快速学习各个技术平台的博客内容。</p>
-        </div>
+        <h2>从0到1设计并落地</h2>
+        <p><strong>功能描述：</strong>在智能体应用中只需输入url，即可自动解析内容，并按照skill中的规格进行内容的格式化输出，方便快速学习各个技术平台的博客内容。</p>
         <div class="card" style="margin-top: 0.5rem;">
           <h3>工作流</h3>
-          <img src="images/image2026-4-23_18-55-19.png" alt="实现架构1" class="screenshot" onclick="openLightbox(this)">
+          <img style="margin-top:0.5rem" src="images/image2026-4-23_18-55-19.png" alt="实现架构1" class="screenshot"
+            onclick="openLightbox(this)">
         </div>
         <div class="three-col">
           <div class="card">
             <h3>稀土掘金</h3>
-            <img src="images/juejin.png" class="screenshot" onclick="openLightbox(this)">
+            <img style="margin-top:0.8rem" src="images/juejin.png" class="screenshot" onclick="openLightbox(this)">
           </div>
           <div class="card">
             <h3>CSDN</h3>
-            <img src="images/csdn.png" class="screenshot" onclick="openLightbox(this)">
+            <img style="margin-top:0.8rem" src="images/csdn.png" class="screenshot" onclick="openLightbox(this)">
           </div>
           <div class="card">
             <h3>语雀</h3>
-            <img src="images/yuque.png" class="screenshot" onclick="openLightbox(this)">
+            <img style="margin-top:0.8rem" src="images/yuque.png" class="screenshot" onclick="openLightbox(this)">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Slide 17: MCP Server - Integration Config -->
-    <section class="slide" data-slide="19" data-title="MCP Server - 配置">
-      <div class="grid-bg"></div>
-      <div class="slide-content">
-        <h2>MCP Server配置</h2>
-        <div class="two-col" style="margin-top: 1.5rem;">
-          <div class="card">
-            <h3>.claude/settings.json</h3>
-            <div class="code-block">
-              <pre><code class="language-json">{
-  "allowedMcpServers": [{
-    "serverName": "fetch-article"
-  }]
-}</code></pre>
-            </div>
-          </div>
-          <div class="card">
-            <h3>.claude.json</h3>
-            <div class="code-block">
-              <pre><code class="language-json">{
-  "mcpServers": {
-    "fetch-article": {
-      "args": ["/c", "node", "D:/workspaceAI/fetch-article/server.mjs"],
-      "command": "cmd",
-      "type": "stdio"
-    }
-  }
-}</code></pre>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Slide 18: MCP Server - Integration -->
     <section class="slide" data-slide="20" data-title="MCP Server - 集成到智能体">
@@ -1464,9 +1444,18 @@
         <h2>集成到智能体应用</h2>
         <p>fetch-article是一个通用的MCP Server，可以集成到任何智能体应用中</p>
         <div class="card">
-          <h3>通用MCP Server</h3>
-          <img style="padding: 1rem;" src="images/image2026-4-24_11-35-52.png" alt="Claude Code集成" class="screenshot"
-            onclick="openLightbox(this)">
+          <h3>MCP Server配置</h3>
+          <div class="code-block">
+            <pre><code >{
+  "mcpServers": {
+    "fetch-article": {
+      "args": ["/c", "node", "D:/workspaceAI/fetch-article/server.mjs"],
+      "command": "cmd",
+      "type": "stdio"
+    }
+  }
+}</code></pre>
+          </div>
         </div>
         <div class="three-col">
           <div class="card">
@@ -1511,12 +1500,12 @@
           <p>给同名的MCP Server做规格约束</p>
           <div class="two-col" style="margin-top: 1rem;">
             <div>
-              <h5>使用skill前（格式不统一）</h5>
+              <h4>使用skill前（格式不统一）</h4>
               <img style="margin-top: 0.7rem;" src="images/1776908372527.png" alt="使用前" class="screenshot"
                 onclick="openLightbox(this)">
             </div>
             <div>
-              <h5>使用skill后（格式统一）</h5>
+              <h4>使用skill后（格式统一）</h4>
               <img style="margin-top: 0.7rem;" src="images/1776913068463.png" alt="使用后" class="screenshot"
                 onclick="openLightbox(this)">
             </div>
@@ -1699,16 +1688,16 @@
           { index: 10, title: '需求描述' },
           { index: 11, title: '自研难点' },
           { index: 12, title: '实现方案' },
-          { index: 13, title: '经验总结' }
+          { index: 13, title: '经验总结' },
+          { index: 14, title: '多模型切换' }
         ]
       },
       {
         title: 'Vibe Coding', icon: '🚀', items: [
-          { index: 14, title: 'Vibe Coding' },
-          { index: 15, title: '桌面应用：LiteMD' },
-          { index: 16, title: '自研通用的MCP Server' },
-          { index: 17, title: 'fetch-article MCP Server' },
-          { index: 18, title: 'MCP Server配置' },
+          { index: 15, title: 'Vibe Coding' },
+          { index: 16, title: '桌面应用：LiteMD' },
+          { index: 17, title: '自研通用的MCP Server' },
+          { index: 18, title: 'fetch-article MCP Server' },
           { index: 19, title: '集成到智能体' },
           { index: 20, title: '积累的Skills' }
         ]
