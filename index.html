@@ -1216,7 +1216,7 @@
         <h2>案例一经验总结</h2>
         <div class="highlight-box green">
           <ul style="width: 450px;">
-            <li>要及时清理上下文：防止产生幻觉、失忆</li>
+            <li>要及时清理上下文：防止产生幻觉、失忆（/compact、/clear）</li>
             <li>多智能体应用协作：各取所长</li>
           </ul>
         </div>
@@ -1571,27 +1571,6 @@
       </div>
     </section>
 
-    <!-- Slide 21: Evolution -->
-    <section class="slide" data-slide="24" data-title="AI Coding开发模式演进">
-      <div class="grid-bg"></div>
-      <div class="slide-content">
-        <h2>26年AI Coding开发模式演进</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <h3>2026年2月 - 2026年3月</h3>
-            <p>Claude Code：安装好用的Skills、MCP Server来提效</p>
-          </div>
-          <div class="timeline-item">
-            <h3>2026年4月至今</h3>
-            <p>多智能体应用混用：自研Skills、MCP Server来提效</p>
-            <p>主：Claude Code</p>
-            <p>副1：Workbuddy：专家</p>
-            <p>副2：Codebuddy：多模型</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Slide 22: Summary -->
     <section class="slide" data-slide="25" data-title="总结">
       <div class="grid-bg"></div>
@@ -1705,20 +1684,19 @@
       {
         title: '效率与推广', icon: '📈', items: [
           { index: 21, title: '工作效率提升' },
-          { index: 22, title: '团队推广' },
-          { index: 23, title: '模式演进' }
+          { index: 22, title: '团队推广' }
         ]
       },
       {
         title: '总结', icon: '📊', items: [
-          { index: 24, title: '总结' },
-          { index: 25, title: 'Q & A' }
+          { index: 23, title: '总结' },
+          { index: 24, title: 'Q & A' }
         ]
       }
     ];
 
     let currentSlide = 1;
-    const totalSlides = 26;
+    const totalSlides = 25;
     let currentPhotoIndex = 0;
     let photoWallImages = [];
 
