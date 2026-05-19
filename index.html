@@ -1341,7 +1341,7 @@
             <h3 style="margin-top: 0.8rem;">1 个 MCP Server</h3>
           </div>
           <div class="overview-card">
-            <h3 style="margin-top: 0.8rem;">3 个 Skill</h3>
+            <h3 style="margin-top: 0.8rem;">4 个 Skill</h3>
           </div>
         </div>
       </div>
@@ -1514,8 +1514,65 @@
       </div>
     </section>
 
+    <!-- Slide 22: parse-api-doc Skill -->
+    <section class="slide" data-slide="22" data-title="parse-api-doc：API文档精准提取">
+      <div class="grid-bg"></div>
+      <div class="slide-content">
+        <h2>parse-api-doc：API文档精准提取</h2>
+        <p><strong>核心功能：</strong>从 Markdown API 文档中精确提取接口名称、请求方式（POST/GET）、入参、出参等信息，降低 AI Coding 成本</p>
+
+        <div class="two-col" style="margin-top: 0.8rem; gap: 1.5rem;">
+          <div>
+            <div class="card" style="padding: 0.6rem 0.8rem; margin: 0;">
+              <h3 style="margin: 0 0 0.4rem;">以前的提示词</h3>
+              <div class="code-block"
+                style="margin-top: 1rem; padding: 0.6rem 0.8rem; font-size: 0.7rem; max-height: 480px; overflow-y: auto;">
+                <pre style="margin: 0; line-height: 1.5;"><code>1、静态页UI：基于上传的原型图
+
+2、前端代码参考：src/views/xxxxxx.vue
+
+3、接口联调、字段绑定：
+根据以下接口文档信息，完成接口封装与字段绑定：
+
+【列表搜索字段】：
++ 【字段名1】- 【字段key】- 【类型】- 【枚举】
++ 【字段名2】- 【字段key】- 【类型】- 【枚举】
+
+【表格列字段】：
++ 【列名1】- 【字段key】- 【类型】- 【枚举】
++ 【列名2】- 【字段key】- 【类型】- 【枚举】
+
+【接口地址】：【api/sample/list】
+【接口类型】：【POST】
+【请求参数】：【贴上参数格式JSON 示例】
+【响应格式】：【贴上返回数据结构 JSON 示例】</code></pre>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="padding: 0.6rem 0.8rem; margin: 0;">
+              <h3 style="margin: 0 0 0.4rem;">现在的提示词</h3>
+              <div class="code-block" style="margin-top: 1rem; padding: 0.6rem 0.8rem; font-size: 0.75rem;">
+                <pre style="margin: 0; line-height: 1.6;"><code>1、静态页UI：基于上传的原型图
+
+2、前端代码参考：src/views/xxxxxx.vue
+
+3、接口联调、字段绑定：
+使用 parse-api-doc skill 解析上传的
+markdown文档，完成接口封装与字段绑定</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="highlight-box green" style="margin-top: 1rem;">
+          <p>组合拳：<strong>parse-api-doc Skill</strong>（提取接口字段、枚举等信息） + <strong>图片理解 MCP Server</strong>（提取中文文案与接口字段关联） =
+            完成大部分接口联调工作</p>
+        </div>
+    </section>
+
     <!-- Slide 19: Efficiency -->
-    <section class="slide" data-slide="22" data-title="工作效率提升情况">
+    <section class="slide" data-slide="23" data-title="工作效率提升情况">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>工作效率提升情况</h2>
@@ -1538,7 +1595,7 @@
     </section>
 
     <!-- Slide 20: Team Promotion -->
-    <section class="slide" data-slide="23" data-title="团队应用推广情况">
+    <section class="slide" data-slide="24" data-title="团队应用推广情况">
       <div class="grid-bg"></div>
       <div class="slide-content">
         <h2>团队应用推广情况</h2>
@@ -1546,23 +1603,24 @@
           <div>
             <div class="card">
               <h3>知识分享</h3>
-              <p style="margin-bottom: 0.5rem;">分享主题：《如何设计并落地一个通用的MCP Server》</p>
+              <p style="margin-bottom: 0.5rem;">分享主题：《如何设计并落地一个通用的 MCP Server》</p>
               <p style="margin-bottom: 0.5rem;">技术要点：MCP Server + Skill + Hook + Auto Memory + Playwright</p>
             </div>
-            <div class="card">
+            <div class="card" style="margin-top: 1.2rem;">
               <h3>团队共享</h3>
               <p style="margin-bottom: 0.5rem;">创建仓库：https://git.i-sanger.com/fe/vibe-coding</p>
-              <p style="margin-bottom: 0.5rem;">经验沉淀：日常工作中积累的Skills和MCP Server</p>
+              <p style="margin-bottom: 0.5rem;">经验沉淀：日常工作中积累的 Skills 和 MCP Server</p>
             </div>
           </div>
           <div class="card">
             <h3>仓库目录</h3>
             <div class="code-block">
-              <pre><code class="language-bash">vibe-coding/
+              <pre style="padding: 0.5rem 1rem;"><code class="language-bash">vibe-coding/
 ├── skills/                    # Claude Code Skills 集合
 │   ├── git-commit-conventions/  # Git 提交规范
 │   ├── html-ppt/                # HTML PPT 生成器
 │   └── fetch-article/           # 文章抓取 Skill
+│   └── parse-api-doc/           # API 文档解析 Skill
 └── mcpSever/                  # MCP Servers 集合
     └── fetch-article/           # 网页文章抓取 MCP 服务器</code></pre>
             </div>
@@ -1678,25 +1736,26 @@
           { index: 17, title: '自研通用的MCP Server' },
           { index: 18, title: 'fetch-article MCP Server' },
           { index: 19, title: '集成到智能体' },
-          { index: 20, title: '积累的Skills' }
+          { index: 20, title: '积累的Skills' },
+          { index: 21, title: 'parse-api-doc Skill' }
         ]
       },
       {
         title: '效率与推广', icon: '📈', items: [
-          { index: 21, title: '工作效率提升' },
-          { index: 22, title: '团队推广' }
+          { index: 22, title: '工作效率提升' },
+          { index: 23, title: '团队推广' }
         ]
       },
       {
         title: '总结', icon: '📊', items: [
-          { index: 23, title: '总结' },
-          { index: 24, title: 'Q & A' }
+          { index: 24, title: '总结' },
+          { index: 25, title: 'Q & A' }
         ]
       }
     ];
 
     let currentSlide = 1;
-    const totalSlides = 25;
+    const totalSlides = 26;
     let currentPhotoIndex = 0;
     let photoWallImages = [];
 
